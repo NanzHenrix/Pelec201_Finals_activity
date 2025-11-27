@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body{
+            position: relative;
+        }
+
+        .nav{
+            display: flex;  
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .nav a {
+            text-decoration: none;
+            user-select: none;
+            color: black;
+        }
+        .items {
+            display: flex;
+            gap: 10px;
+            padding-left: 0px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Lucida Handwriting", cursive;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;;
+        }
+        .details {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .bttn {
+            background-color: palevioletred;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .image-1, .image-2 {
+            position: absolute;
+        }
+        
+        .image-1 {
+            left: 0;
+            bottom: 10;
+            z-index: -2;
+        }
+    
+        .image-2 {
+            right: 0;
+            bottom: 10;
+            z-index: -2;
+        }
+
+    </style>
+
+    <nav class="nav">
+        <ul class="items">
+            <a href="">Renters</a>
+            <a href="">Homeowners</a>
+            <a href="">Car</a>
+            <a href="">Pet</a>
+            <a href="">Life</a>
+            <a href="">Giveback</a>
+        </ul>
+
+        <a href="">my account</a>
+    </nav>
+
+    <header class="header">
+        <h1>Lemonade</h1>
+    </header>
+
+    <main class="content">
+        <div class="details">
+            <h1>Forget everything you know about insurance</h1>
+            <p>Intstant everything. Incredible prices. Big heart</p>
+        </div>
+        <button class="bttn">
+            CHECK OUR PRICES
+        </button>
+    </main>
+
+    <img src="image1.jpg"  class="image-1">
+    <img src="image2.jpg"  class="image-2">
+
+</body>
+</html>
